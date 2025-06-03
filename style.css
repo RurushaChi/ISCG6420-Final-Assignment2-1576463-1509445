@@ -95,7 +95,7 @@ body{
 
 /*Park Map*/
 .parkMap{
-    background-image: url('/images/waterpark.jpg'); 
+    background-image: url('./images/waterpark.jpg'); 
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat; 

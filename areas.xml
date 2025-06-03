@@ -6,7 +6,7 @@
         <cost>15.00</cost>
         <bookedCount>5</bookedCount>
         <capacity>5</capacity>
-        <areaImage>/pool-side-images/1.png</areaImage>
+        <areaImage>./pool-side-images/1.png</areaImage>
     </area>
 
     <area>
@@ -14,7 +14,7 @@
         <cost>15.00</cost>
         <bookedCount>3</bookedCount>
         <capacity>5</capacity>
-        <areaImage>/pool-side-images/2.png</areaImage>
+        <areaImage>./pool-side-images/2.png</areaImage>
     </area>
 
     <area>
@@ -22,7 +22,7 @@
         <cost>15.00</cost>
         <bookedCount>0</bookedCount>
         <capacity>5</capacity>
-        <areaImage>/pool-side-images/3.png</areaImage>
+        <areaImage>./pool-side-images/3.png</areaImage>
     </area>
 
     <area>
@@ -30,7 +30,7 @@
         <cost>15.00</cost>
         <bookedCount>0</bookedCount>
         <capacity>5</capacity>
-        <areaImage>/pool-side-images/4.png</areaImage>
+        <areaImage>./pool-side-images/4.png</areaImage>
     </area>
 
     <area>
@@ -38,7 +38,7 @@
         <cost>15.00</cost>
         <bookedCount>0</bookedCount>
         <capacity>5</capacity>
-        <areaImage>/pool-side-images/5.png</areaImage>
+        <areaImage>./pool-side-images/5.png</areaImage>
     </area>
 
     <!--The 2 areas with a capacity of 10  -->
@@ -47,7 +47,7 @@
         <cost>10.00</cost>
         <bookedCount>10</bookedCount>
         <capacity>10</capacity>
-        <areaImage>/pool-side-images/6.png</areaImage>
+        <areaImage>./pool-side-images/6.png</areaImage>
     </area>
 
     <area>
@@ -55,7 +55,7 @@
         <cost>10.00</cost>
         <bookedCount>10</bookedCount>
         <capacity>10</capacity>
-        <areaImage>/pool-side-images/7.png</areaImage>
+        <areaImage>./pool-side-images/7.png</areaImage>
     </area>
 
     <!--The 2 areas with a capacity of 20  -->
@@ -64,7 +64,7 @@
         <cost>8.00</cost>
         <bookedCount>0</bookedCount>
         <capacity>20</capacity>
-        <areaImage>/pool-side-images/8.png</areaImage>
+        <areaImage>./pool-side-images/8.png</areaImage>
     </area>
 
     <area>
@@ -72,7 +72,7 @@
         <cost>8.00</cost>
         <bookedCount>0</bookedCount>
         <capacity>20</capacity>
-        <areaImage>/pool-side-images/9.png</areaImage>
+        <areaImage>./pool-side-images/9.png</areaImage>
     </area>
 
     <!--The 1 area with a capacity of 50  -->
@@ -81,7 +81,7 @@
         <cost>5.00</cost>
         <bookedCount>0</bookedCount>
         <capacity>50</capacity>
-        <areaImage>/pool-side-images/10.png</areaImage>
+        <areaImage>./pool-side-images/10.png</areaImage>
     </area>
 
     

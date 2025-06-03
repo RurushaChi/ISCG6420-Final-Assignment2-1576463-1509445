@@ -168,6 +168,7 @@ window.onload = function () {
                     //Check if the capacity is full
                     if(currentBookedCount==currentCapacity){
                         areaBtnList[index].disabled = true; //disable if full
+                        areaDivList[index].style.backgroundColor='#FFCCCC';
                     }
                     
                     areaBtnList[index].style.display='block'; //dissplay button
