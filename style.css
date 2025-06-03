@@ -40,11 +40,11 @@ body{
 }
 
 .navBar ul{
-    margin-left: 12%; 
+    margin-left: 8%; 
 }
 
 .navBar li{
-    margin-right: 5%;
+    margin-right: 2%;
     display: inline;
     list-style-type: none;
     float: left;    
@@ -139,7 +139,7 @@ body{
 .areaABtn, .areaBBtn, .areaCBtn, .areaDBtn, .areaEBtn, .areaFBtn, .areaGBtn, .areaHBtn, .areaIBtn, .areaJBtn{
     display: none;
     border-radius: 20px; 
-;
+
 }
 .areaAImage, .areaBImage, .areaCImage, .areaDImage, .areaEImage, .areaFImage, .areaGImage, .areaHImage, .areaIImage, .areaJImage{
     display: none;

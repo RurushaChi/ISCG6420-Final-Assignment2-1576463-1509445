@@ -4,7 +4,6 @@
     <!--The 5 areas with a capacity of 5  -->
         <areaName>Blue Lagoon</areaName>
         <cost>15.00</cost>
-        <bookedStatus>Full</bookedStatus>
         <bookedCount>5</bookedCount>
         <capacity>5</capacity>
         <areaImage>/pool-side-images/1.png</areaImage>
@@ -13,7 +12,6 @@
     <area>
         <areaName>Havanna</areaName>
         <cost>15.00</cost>
-        <bookedStatus>Available</bookedStatus>
         <bookedCount>3</bookedCount>
         <capacity>5</capacity>
         <areaImage>/pool-side-images/2.png</areaImage>
@@ -22,7 +20,6 @@
     <area>
         <areaName>Splash Sphere</areaName>
         <cost>15.00</cost>
-        <bookedStatus>Available</bookedStatus>
         <bookedCount>0</bookedCount>
         <capacity>5</capacity>
         <areaImage>/pool-side-images/3.png</areaImage>
@@ -31,7 +28,6 @@
     <area>
         <areaName>HydroTopia</areaName>
         <cost>15.00</cost>
-        <bookedStatus>Available</bookedStatus>
         <bookedCount>0</bookedCount>
         <capacity>5</capacity>
         <areaImage>/pool-side-images/4.png</areaImage>
@@ -40,7 +36,6 @@
     <area>
         <areaName>Surf and Flirt</areaName>
         <cost>15.00</cost>
-        <bookedStatus>Vailable</bookedStatus>
         <bookedCount>0</bookedCount>
         <capacity>5</capacity>
         <areaImage>/pool-side-images/5.png</areaImage>
@@ -50,7 +45,6 @@
     <area>
         <areaName>Oasis Springs</areaName>
         <cost>10.00</cost>
-        <bookedStatus>Full</bookedStatus>
         <bookedCount>10</bookedCount>
         <capacity>10</capacity>
         <areaImage>/pool-side-images/6.png</areaImage>
@@ -59,7 +53,6 @@
     <area>
         <areaName>Splash and Dash</areaName>
         <cost>10.00</cost>
-        <bookedStatus>Full</bookedStatus>
         <bookedCount>10</bookedCount>
         <capacity>10</capacity>
         <areaImage>/pool-side-images/7.png</areaImage>
@@ -69,7 +62,6 @@
     <area>
         <areaName>Spring City</areaName>
         <cost>8.00</cost>
-        <bookedStatus>Available</bookedStatus>
         <bookedCount>0</bookedCount>
         <capacity>20</capacity>
         <areaImage>/pool-side-images/8.png</areaImage>
@@ -78,7 +70,6 @@
     <area>
         <areaName>Lazy River</areaName>
         <cost>8.00</cost>
-        <bookedStatus>Available</bookedStatus>
         <bookedCount>0</bookedCount>
         <capacity>20</capacity>
         <areaImage>/pool-side-images/9.png</areaImage>
@@ -88,7 +79,6 @@
     <area>
         <areaName>Copa Cabana</areaName>
         <cost>5.00</cost>
-        <bookedStatus>Available</bookedStatus>
         <bookedCount>0</bookedCount>
         <capacity>50</capacity>
         <areaImage>/pool-side-images/10.png</areaImage>

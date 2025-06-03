@@ -88,6 +88,7 @@ window.onload = function () {
     let currentBookedCount=0;
     let currentCapacity=0;
     let currentImage="";
+    let totalCost=0;
 
 
     //Placing div elements, paragraph, images elements and button elements in lists
@@ -146,12 +147,20 @@ window.onload = function () {
                     const area = xmlDoc.getElementsByTagName("area")[index];
                     currentAreaName = area.getElementsByTagName("areaName")[0].textContent;
                     currentCost = area.getElementsByTagName("cost")[0].textContent;
-                    currentBookedStatus = area.getElementsByTagName("bookedStatus")[0].textContent;
                     currentBookedCount = area.getElementsByTagName("bookedCount")[0].textContent;
                     currentCapacity = area.getElementsByTagName("capacity")[0].textContent;
                     currentImage=area.getElementsByTagName("areaImage")[0].textContent;
 
-                    areaTextList[index].innerHTML = currentAreaName +"<br>Cost: $" + currentCost + "pp<br>" +"Status: " + currentBookedStatus + "<br>" +"Count: " + currentBookedCount + "<br>"+"Capacity: " + currentCapacity;
+                    //setting booked status
+                    if(currentBookedCount==currentCapacity){
+                        currentBookedStatus="Full";
+                    }
+                    else{
+                        currentBookedStatus="Available"
+                    }
+
+
+                    areaTextList[index].innerHTML = currentAreaName +"<br>Cost: $" + currentCost + "pp<br>" +"Status: " + currentBookedStatus + "<br>" +"Spaces Availabe: " +(currentCapacity-currentBookedCount) + "<br>"+"Capacity: " + currentCapacity;
                     //To display expansion images
                     areaImages[index].style.backgroundImage=`url('${currentImage}')`;
                     areaImages[index].style.display='block';
@@ -239,14 +248,16 @@ window.onload = function () {
         bookingArea.textContent ="";
         bookingSummary.style.display = "none";
         makeNewBookingBtn.style.display='none';
+        returnBtn.style.display='none';
 
         //Hide entire Form
         bookingForm.style.display='none';
+        alert("Booking Confirmed");
 
     });
 
     bookingSubmit.addEventListener('click', function () {
-        if(arrivalDate.value != "" && depatureDate.value!=""&& bookingNum.value>0&& name.value!=""&emailAdd.value!=""){
+        if(arrivalDate.value != "" && depatureDate.value!=""&& bookingNum.value>0&& name.value!=""&&emailAdd.value!=""&&bookingNum.value<=(currentCapacity-currentBookedCount)){
             bookingSummary.style.display = "block";
 
 
@@ -269,11 +280,17 @@ window.onload = function () {
             const dateA = new Date(arrivalDate.value); 
             const dateB = new Date(depatureDate.value);
             const diffTime = Math.abs(dateA - dateB); 
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));  
+            let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+            
+            //for same day arrival and depature
+            if(diffDays<1){
+                diffDays=1;
+            }
+           
             //Final Cost including area cost
-            let totalCost = (parseFloat(currentCost) * parseFloat(bookingNum.value))*diffDays;      
+            totalCost = (parseFloat(currentCost) * parseFloat(bookingNum.value))*diffDays;      
 
-            // Show booking summary with values
+            // Show booking summary values
             bookingSummary.innerHTML = `
             Name: ${name.value} <br>
             Email: ${emailAdd.value} <br>
@@ -289,14 +306,25 @@ window.onload = function () {
             returnBtn.style.display='block';
         }
         else{
+            //checking alert reason
+            if(bookingNum.value>(currentCapacity-currentBookedCount)){
+                alert("The number of people you would like to book for exceeds the spaces available.");
+            }
+            else{
             alert("One or more feild have not been filled.Please check the form carefully and fill in the missing feilds before submitting.");
+            }
         }
         
     });   
     
     returnBtn.addEventListener('click', function () {
+        totalCost=0;
         makeNewBookingBtn.style.display='none';
-        // Hide previous Input elements
+        bookingSubmit.style.display='block';
+        returnBtn.style.display='none';
+        bookingSummary.style.display='none';
+
+        // show previous Input elements
         arrivalDate.style.display = "block";
         depatureDate.style.display = "block";
         bookingNum.style.display = "block";
