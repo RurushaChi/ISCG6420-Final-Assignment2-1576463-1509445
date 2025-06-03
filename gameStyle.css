@@ -221,6 +221,11 @@ html {
         .game-buttons {
             display: flex;
             gap: 15px;
+            color: white;
+        }
+
+        #startBtn, #restartBtn{
+            color: white;
         }
 
         @media (max-width: 100%) {
