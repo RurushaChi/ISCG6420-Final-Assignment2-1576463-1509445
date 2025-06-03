@@ -1,0 +1,234 @@
+
+html
+{
+    box-sizing: border-box;
+    
+}
+*,*:before, *:after
+{
+    box-sizing: inherit;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 125vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #b5d2dd;      
+}
+.content
+{
+    
+    width: 70%; 
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    
+      
+}
+
+
+
+/*Navigation Bar*/
+.navBar
+{ 
+    background-color: #1b2538;
+    padding: 20px 0; 
+    overflow: hidden; 
+}
+
+.navBar ul{
+    margin-left: 12%; 
+}
+
+.navBar li{
+    margin-right: 5%;
+    display: inline;
+    list-style-type: none;
+    float: left;    
+    font-size: 20px; 
+    
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    display: block; 
+    
+}
+/*Banner*/
+#poolImage {
+  height: 300px;
+  object-fit: cover; 
+  width: 100%; 
+}
+
+.imageContainer{
+    position: relative;
+}
+
+.imageContainer img {
+    border-radius: 20px;       /* for a curved border */
+}
+
+.imageContainer h1{
+    color: greenyellow;
+}
+
+.imageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  
+}
+
+.imageText h1{
+  font-size: 80px;
+  font-weight: bold;
+}
+
+/*Park Map*/
+.parkMap{
+    background-image: url('/images/waterpark.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    width: 100%;                  
+    height: 668px;                
+    background-color: white;
+    position: relative;
+    
+}
+
+/*footer*/
+.footer
+{
+    width: 100%;
+    background-color: #1b2538;
+    text-align: center;
+    color: white;
+    padding: 20px 0; /* Adding vertical space */
+}
+.container{
+    background-color: #1b2538;
+}
+/*ParkMap*/
+.bookingForm{
+    background-color: aliceblue;
+}
+
+
+.areaA, .areaB, .areaC, .areaD, .areaE, .areaF, .areaG, .areaH, .areaI, .areaJ{
+
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    display: block;
+    position: absolute;
+    opacity: 90%; 
+    text-align: center;
+    font-size: 40px;
+
+}
+.areaABtn, .areaBBtn, .areaCBtn, .areaDBtn, .areaEBtn, .areaFBtn, .areaGBtn, .areaHBtn, .areaIBtn, .areaJBtn{
+    display: none;
+    border-radius: 20px; 
+;
+}
+.areaAImage, .areaBImage, .areaCImage, .areaDImage, .areaEImage, .areaFImage, .areaGImage, .areaHImage, .areaIImage, .areaJImage{
+    display: none;
+    width: 290px;
+    height: 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px; 
+}
+
+.areaA{
+    margin-top: 70px;
+}
+
+.areaB{
+    margin-top: 140px;
+    margin-left: 110px;
+}
+
+.areaC{
+    margin-top: 410px;
+    margin-left: 90px;
+}
+
+.areaD{
+    margin-top: 600px;
+    margin-left: 400px;
+}
+
+.areaE{
+    margin-top: 400px;
+    margin-left: 350px;
+}
+.areaF{
+    margin-top:  350px;
+    margin-left: 510px;
+}
+.areaG{
+    margin-top: 600px;
+    margin-left: 750px;
+}
+.areaH{
+    margin-top: 400px;
+    margin-left: 750px;
+}
+.areaI{
+    margin-top: 550px;
+    margin-left: 600px;
+}
+.areaJ{
+    margin-top: 250px;
+    margin-left: 800px;
+}
+
+.bookingInstructions{
+    background-color: #1b2538;
+    color: white;
+}
+
+.bookingForm {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 100%; 
+  border-radius: 20px; 
+}
+.bookingForm h3, h4{
+    padding: 10px;
+
+}
+
+#bookingSummary{
+    display: none;
+}
+
+.submitBtn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px; 
+}
+.returnBtn{
+    display: none;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+.makeNewBookingBtn{
+    display: none;
+    margin: 0 auto;
+    border-radius: 20px; 
+}

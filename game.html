@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Parakai Springs Game</title>
+    <link rel="stylesheet" href="./gameStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="navBarMain">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="game.html">Video Game</a></li>
+                        <li><a href="/documents/ISCG6420-Part1-Wireframe-1509445.pdf" target="_blank">Part 1 Wireframe</a></li>
+                        <li><a href="#">Part 2 Wireframe</a></li>
+                        <li><a href="#">Part 2 Storyboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="game-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="game-header">
+                                <div class="game-title">
+                                    <h1>Splash & Catch</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="game-controls">
+                                <button class="btn btn-start" id="startBtn">START GAME</button>
+                                <button class="btn btn-restart" id="restartBtn">RESTART</button>
+                                <div class="game-duration">
+                                    <label for="gameDuration">Game Duration:</label>
+                                    <select id="gameDuration">
+                                        <option value="60">1 Minute</option>
+                                        <option value="120">2 Minutes</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="game-stats">
+                                <div class="stat score">Score: <span id="scoreDisplay">0</span></div>
+                                <div class="stat time-left">Time Left: <span id="timeDisplay">60s</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="game-area">
+                                <div class="instructions">
+                                    <h3>How to Play</h3>
+                                    <ul>
+                                        <li>Use Arrow Keys or WASD to swim around the pool</li>
+                                        <li>Press SPACEBAR when near a toy to collect it</li>
+                                        <li>Collect colorful submersible toys before they sink to the bottom</li>
+                                        <li>Toys get smaller and harder to see as they sink - act fast!</li>
+                                        <li>Each toy collected = +1 point</li>
+                                        <li>Success sound when you collect a toy</li>
+                                        <li>Fail sound when you miss a toy</li>
+                                        <li>Special sounds for game start and end</li>
+                                        <li>Choose between 1 or 2 minute game duration</li>
+                                    </ul>
+                                </div>
+                                <div class="game-canvas-container">
+                                    <div class="game-message" id="gameMessage">Press Start to Begin!</div>
+                                    <canvas id="ex3canvas" width="800" height="470"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of .game-container -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="footer">Parakai Springs 2025</div>
+            </div>
+        </div>
+    </div> <!-- end of .container -->
+
+    <script src="game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Parakai Springs</title>
+        <style src="./style.css"></style>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="navBar">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="game.html">Video Game</a></li>
+                            <li><a href="/documents/ISCG6420-Part1-Wireframe-1509445.pdf" target="_blank">Part 1 Wireframe</a></li>
+                            <li><a href="#">Part 2 Wireframe</a></li>
+                            <li><a href="#">Part 2 Storyboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="Banner">
+                    <div class="imageContainer">
+                        <img src="/images/poolBanner.png" id="poolImage" class="img-fluid" alt="Pool">
+                        <div class="imageText">
+                            <h1>Parakai Springs</h1>
+                        </div>         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="bookingInstructions">
+                    <h1>Booking Instructions</h1>
+                    <ol>
+                        <li>Move your mouse over the map to discover the various areas.</li>
+                        <li>Click book on an areas information expansion if you you would like to book an area .</li>
+                        <li>Fill in the booking form at the right side of the map.</li>
+                        <li>Click submit once you have filled in the form.</li>
+                    </ol>                        
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+                <div class="col-8"> 
+                    <div class="parkMap" >
+                        <div class="areaA">
+                            <p class="areaAText">A</p>
+                            <div class="areaAImage"></div>
+                            <button class="areaABtn">Book</button>
+                        </div>
+
+                        <div class="areaB">
+                            <p class="areaBText">B</p>
+                            <div class="areaBImage"></div>
+                            <button class="areaBBtn">Book</button>
+                        </div>
+
+                        <div class="areaC">
+                            <p class="areaCText">C</p>
+                            <div class="areaCImage"></div>
+                            <button class="areaCBtn">Book</button>
+                        </div>
+
+                        <div class="areaD">
+                            <p class="areaDText">D</p>
+                            <div class="areaDImage"></div>
+                            <button class="areaDBtn">Book</button>
+                        </div>
+
+                        <div class="areaE">
+                            <p class="areaEText">E</p>
+                            <div class="areaEImage"></div>
+                            <button class="areaEBtn">Book</button>
+                        </div>
+
+                        <div class="areaF">
+                            <p class="areaFText">F</p>
+                            <div class="areaFImage"></div>
+                            <button class="areaFBtn">Book</button>
+                        </div>
+
+                        <div class="areaG">
+                            <p class="areaGText">G</p>
+                            <div class="areaGImage"></div>
+                            <button class="areaGBtn">Book</button>
+                        </div>
+
+                        <div class="areaH">
+                            <p class="areaHText">H</p>
+                            <div class="areaHImage"></div>
+                            <button class="areaHBtn">Book</button>
+                        </div>
+
+                        <div class="areaI">
+                            <p class="areaIText">I</p>
+                            <div class="areaIImage"></div>
+                            <button class="areaIBtn">Book</button>
+                        </div>
+
+                        <div class="areaJ">
+                            <p class="areaJText">J</p>
+                            <div class="areaJImage"></div>
+                            <button class="areaJBtn">Book</button>
+                        </div>
+
+                    </div>
+                </div>
+            
+            <div class="col-4">
+                <div class="bookingForm">
+                    <h3 class="bookingTitle">Booking Form</h3>
+                    <h4 class="bookingArea"></h4>
+                    <p id="bookingSummary"></p>
+                    <div class="form-group mb-3">
+                        <label for="name" id="nameLbl">Name: </label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="emailAdd" id="emailAddLbl">Email: </label>
+                        <input type="email" id="emailAdd" name="emailAdd">
+                    </div>
+                    <div class="form-group mb-3"> <!-- A bootstrap utility that adds spacing between form fields-->
+                        <label for="arrivalDate" id="arrivalDateLbl">Arrival Date</label>
+                        <input type="date" id="arrivalDate" name="arrivalDate" class="form-control">
+                    </div>
+                    <div class="form-group mb-3"> 
+                        <label for="depatureDate" id="depatureDateLbl">Depature Date</label>
+                        <input type="date" id="depatureDate" name="depatureDate" class="form-control">
+                    </div>
+
+                    <div class="form-group mb-3">
+                    <label for="bookingNum" id="bookingNumLbl">Number of People</label>
+                    <input type="number" id="bookingNum" min="1" max="50" name="bookingNum" class="form-control">
+                    </div>
+
+                    <div class =returnBtnWrapper>
+                            <button class="returnBtn">Return</button>
+                    </div>
+
+                    <div class =submitBtnWrapper>
+                            <button class="submitBtn">View Summary</button>
+                    </div>
+                    <div class =makeNewBookingBtnWrapper>
+                            <button class="makeNewBookingBtn">Confirm</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="footer">Parakai Springs 2025</div>
+            </div>
+        </div>
+    
+        </div>
+
+        <script src="script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+    </body>
+</html>
